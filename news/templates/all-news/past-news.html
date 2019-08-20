@@ -8,6 +8,10 @@
     <div class="row">
         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
             <h2 class="text-center">{{manews.title }}</h2>
+            <p> {{manews.post}} </p>
+            {% if manews.article_image  %}
+                <img src="{{ manews.article_image.url}}" class="img-responsive" alt="Image">
+            {% endif %}
         </div>
     </div>
     {% empty %}
