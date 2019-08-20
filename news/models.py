@@ -31,7 +31,8 @@ class Article(models.Model):
         on_delete=models.DO_NOTHING)
     tags = models.ManyToManyField(Tags)
     pub_date = models.DateTimeField(auto_now_add=True)
-    article_image = models.ImageField(upload_to = 'articles/', null=True)
+    article_image = models.ImageField(upload_to='articles/',default="")
+    
     def __str__(self):
         return self.title
 
