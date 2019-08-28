@@ -9,6 +9,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 
 import os
 import django_heroku
+from decouple import config
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -50,6 +51,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'tribune.urls'
+LOGIN_REDIRECT_URL = ('/')
 
 TEMPLATES = [
     {
@@ -82,6 +84,7 @@ DATABASES = {
         'PASSWORD': 'mumo'
     }
 }
+
 
 
 # Password validation
@@ -127,5 +130,11 @@ STATICFILES_DIRS=[
 ]
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+EMAIL_USE_TLS = True 
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'mywebsites105005@gmail.com'
+EMAIL_HOST_PASSWORD = 'brayomumo1'
 
 django_heroku.settings(locals())
