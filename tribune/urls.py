@@ -22,5 +22,6 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'',include('news.urls')),
     url(r'^accounts/', include('registration.backends.simple.urls')),
-    url('logout/', LogoutView.as_view(template_name='all-news/today-news.html'), name="logout")
+    url('logout/', LogoutView.as_view(template_name='all-news/today-news.html'), name="logout"),
+    url(r'^tinymce', include('tinymce.urls')),
     ]
