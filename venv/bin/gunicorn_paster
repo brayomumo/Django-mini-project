@@ -1,4 +1,4 @@
-#!/home/smoucha/Desktop/python/Django/The-Moringa-Tribune/venv/bin/python3.6
+#!/home/smoucha/Desktop/mini-projects/Django-mini-project/venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

@@ -46,7 +46,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/home/smoucha/Desktop/python/Django/The-Moringa-Tribune/venv"
+VIRTUAL_ENV="/home/smoucha/Desktop/mini-projects/Django-mini-project/venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

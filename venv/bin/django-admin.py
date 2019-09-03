@@ -1,4 +1,4 @@
-#!/home/smoucha/Desktop/python/Django/The-Moringa-Tribune/venv/bin/python3
+#!/home/smoucha/Desktop/mini-projects/Django-mini-project/venv/bin/python
 from django.core import management
 
 if __name__ == "__main__":

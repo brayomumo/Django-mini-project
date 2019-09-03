@@ -1,4 +1,4 @@
-#!/home/smoucha/Desktop/python/Django/The-Moringa-Tribune/venv/bin/python
+#!/home/smoucha/Desktop/mini-projects/Django-mini-project/venv/bin/python
 
 import sys
 import getopt
